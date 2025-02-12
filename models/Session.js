@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
 
-const sessionSchema = new mongoose.Schema({
-  data: Object,
+const SessionSchema = new mongoose.Schema({
+  sessionId: { type: String, required: true, unique: true },
+  data: { type: Object, required: true },
 });
 
-export default mongoose.model("Session", sessionSchema);
+const Session = mongoose.model("Session", SessionSchema);
+export default Session;
