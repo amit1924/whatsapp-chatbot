@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Environment variables
+.env
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# WhatsApp Web.js session data
+.session/
+.wwebjs_auth/
+
+# Database
+*.sqlite
+*.sqlite-journal
+/data/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
