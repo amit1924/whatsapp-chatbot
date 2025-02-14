@@ -3,13 +3,13 @@ import "dotenv/config";
 import pkg from "whatsapp-web.js";
 import axios from "axios";
 import qrcode from "qrcode-terminal";
-import getJoke from "../joke.js";
-import chatWithGemini from "../ai.js";
-import generateImage from "../image.js";
+import getJoke from "./joke.js";
+import chatWithGemini from "./ai.js";
+import generateImage from "./image.js";
 import { franc } from "franc-min";
-import connectDB from "../lib/db.js";
-import Conversation from "../models/Conversation.js";
-import Session from "../models/Session.js"; // New model to store session data
+import connectDB from "./lib/db.js";
+import Conversation from "./models/Conversation.js";
+import Session from "./models/Session.js"; // New model to store session data
 
 const app = express();
 const PORT = process.env.PORT || 3000;
