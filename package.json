@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
    "start": "node api/index.js",
-    "dev": "nodemon api/index.js",
-    "postinstall": "apt-get update && apt-get install -y libnss3"
+    "dev": "nodemon api/index.js"
+   
   },
   "keywords": [],
   "author": "",
@@ -24,5 +24,6 @@
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.26.0",
     "wwebjs-mongo": "^1.1.0"
+   
   }
 }
