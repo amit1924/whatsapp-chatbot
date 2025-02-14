@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
    "start": "node api/index.js",
-    "dev": "nodemon api/index.js"
+    "dev": "nodemon api/index.js",
+    "postinstall": "apt-get update && apt-get install -y libnss3"
   },
   "keywords": [],
   "author": "",
